@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/normalice.css" />
+    <link rel="stylesheet" href="../css/Calculadora.css" />
+    <link rel="stylesheet" href="../css/Header.css" />
+  </head>
+  <body>
+    <header>
+      <img src="../img/Axolo.png" alt="Axolo" srcset />
+      <div>
+        <p>DesarrolloWeb 2022</p>
+        <p>Damián Hernández Huchín</p>
+      </div>
+      <a href="/">Voler al Menu</a>
+    </header>
+
+    <h1>Calculadora en Javascript</h1>
+
+    <form action="">
+      <div>
+        <label for="Num1">Primer Valor</label>
+        <input type="text" name="Num1" id="Num1" value="0" />
+      </div>
+      <div>
+        <label for="Num2">Segundo Valor</label>
+        <input type="text" name="Num2" id="Num2" value="0" />
+      </div>
+      <div>
+        <input type="button" value="Sumar" onclick="Sumar()" />
+        <input type="button" value="Restar" onclick="Restar()" />
+        <input type="button" value="Dividir" onclick="Dividir()" />
+        <input type="button" value="Multiplicar" onclick="Multiplicar()" />
+      </div>
+      <input type="text" name="Result" id="Result" value="0" disabled />
+    </form>
+
+    <script src="../js/Calculadora.js"></script>
+  </body>
+</html>
