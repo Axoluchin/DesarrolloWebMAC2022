@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+
+    <link rel="stylesheet" href="../css/normalice.css" />
+    <link rel="stylesheet" href="../css/ToDoList.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/Header.css">
+  </head>
+  <body>
+    <header>
+        <img src="../img/Axolo.png" alt="Axolo" srcset />
+        <div>
+          <p>DesarrolloWeb 2022</p>
+          <p>Damián Hernández Huchín</p>
+        </div>
+        <a href="/">Voler al Menu</a>
+      </header>
+    <h1>To do list</h1>
+
+    <form action="">
+      <div>
+        <label for="Activity">Actividad</label>
+        <input
+          type="text"
+          name="Activity"
+          id="Activity"
+          placeholder="Lavar ropa"
+        />
+      </div>
+      <div>
+        <label for="Desc">Descripcion</label>
+        <textarea name="Desc" id="Desc" cols="30" rows="10"></textarea>
+      </div>
+      <input type="button" value="Agregar" onclick="addTask()" />
+    </form>
+    <section id="TaskArea">
+    </section>
+    <script src="../js/ToDoList.js"></script>
+  </body>
+</html>
