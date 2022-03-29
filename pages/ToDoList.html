@@ -15,17 +15,18 @@
       href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/Header.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/Header.css" />
   </head>
   <body>
     <header>
-        <img src="../img/Axolo.png" alt="Axolo" srcset />
-        <div>
-          <p>DesarrolloWeb 2022</p>
-          <p>Damián Hernández Huchín</p>
-        </div>
-        <a href="/">Voler al Menu</a>
-      </header>
+      <img src="../img/Axolo.png" alt="Axolo" srcset />
+      <div>
+        <p>DesarrolloWeb 2022</p>
+        <p>Damián Hernández Huchín</p>
+      </div>
+      <a href="/">Voler al Menu</a>
+    </header>
     <h1>To do list</h1>
 
     <form action="">
@@ -45,6 +46,14 @@
       <input type="button" value="Agregar" onclick="addTask()" />
     </form>
     <section id="TaskArea">
+      <article id="20" class="">
+        <h2>Lavar</h2>
+        <p>Mucha ropa</p>
+        <div>
+          <i class='bx bx-trash' onclick="deleteTask(20)"></i>
+          <i class='bx bx-check' onclick="checkTask(20)"></i>
+        </div>
+      </article>
     </section>
     <script src="../js/ToDoList.js"></script>
   </body>

@@ -17,19 +17,21 @@ form {
   align-items: center;
 }
 
-form div{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 1.5rem 0;
-    width: 100%;
+form div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1.5rem 0;
+  width: 100%;
 }
 
-input[type="text"], textarea, input[type="button"] {
+input[type="text"],
+textarea,
+input[type="button"] {
   background-color: #191919;
   color: #ecdbba;
   border-style: solid;
-  border-color: #C84B31;
+  border-color: #c84b31;
   font-family: "Fredoka", sans-serif;
   border-width: 1px;
   border-radius: 1rem;
@@ -39,41 +41,74 @@ input[type="text"], textarea, input[type="button"] {
   transition: background-color 250ms;
 }
 
-input[type="text"]{
-    text-align: center;
+input[type="text"] {
+  text-align: center;
 }
 
 input[type="button"]:hover {
-    background-color: #C84B31;
+  background-color: #c84b31;
 }
 
-section{
-    margin: 3rem 10%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+section {
+  margin: 3rem 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-section article{
-    max-width: 300px;
-    min-width: 200px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #2D4263;
-    border-radius: 15px;
-    margin: 20px;
+section article {
+  width: 300px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #2d4263;
+  border-radius: 15px;
+  margin: 20px;
 }
 
-article h2{
-    text-align: center;
-    background-color: #2D4263;
-    border-radius: 10px;
-    padding: 1rem;
-    margin: 0%;
+article h2 {
+  text-align: center;
+  background-color: #2d4263;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 0%;
 }
 
-article p{
-    margin: 20px;
-    font-size: large;
+article p {
+  margin: 20px;
+  font-size: large;
+}
+
+article div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+article div i {
+  font-size: xx-large;
+  padding: 5px;
+  border-radius: 50%;
+  transition: background-color 150ms;
+  cursor: pointer;
+}
+
+.bx-check:hover {
+  background-color: rgb(58, 155, 58);
+}
+
+.bx-trash:hover {
+  background-color: rgb(155, 58, 58);
+}
+
+.check {
+  border-color: rgb(58, 155, 58);
+}
+
+.check h2 {
+  background-color: rgb(58, 155, 58);
+}
+
+.check .bx-check {
+  background-color: rgb(58, 155, 58);
 }
